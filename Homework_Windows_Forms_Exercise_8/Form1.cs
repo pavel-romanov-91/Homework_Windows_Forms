@@ -1,13 +1,13 @@
-namespace Homework_Windows_Forms_Exercise_8
+п»їnamespace Homework_Windows_Forms_Exercise_8
 {
     public partial class Form1 : Form
     {
-        double PayTotal { get; set; } = 0;//общая сумма
-        int tempTimer = 0;//итератор таймера
-        double cHot, cHam, cCol, cFri = 0;//переменные для хранения кол-во товаров кафе
-        double PayCafe { get; set; } = 0;//сумма покупки в кафе
-        double PayGasStation { get; set; } = 0;//сумма покупки топлива
-        double[] oil = { 32.49, 31.49, 30.49, 28.99, 12.69 };//цена топлива
+        double PayTotal { get; set; } = 0;//РѕР±С‰Р°СЏ СЃСѓРјРјР°
+        int tempTimer = 0;//РёС‚РµСЂР°С‚РѕСЂ С‚Р°Р№РјРµСЂР°
+        double cHot, cHam, cCol, cFri = 0;//РїРµСЂРµРјРµРЅРЅС‹Рµ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РєРѕР»-РІРѕ С‚РѕРІР°СЂРѕРІ РєР°С„Рµ
+        double PayCafe { get; set; } = 0;//СЃСѓРјРјР° РїРѕРєСѓРїРєРё РІ РєР°С„Рµ
+        double PayGasStation { get; set; } = 0;//СЃСѓРјРјР° РїРѕРєСѓРїРєРё С‚РѕРїР»РёРІР°
+        double[] oil = { 32.49, 31.49, 30.49, 28.99, 12.69 };//С†РµРЅР° С‚РѕРїР»РёРІР°
         public Form1()
         {
             InitializeComponent();
@@ -76,7 +76,7 @@ namespace Homework_Windows_Forms_Exercise_8
             catch (Exception)
             {
                 text.Text = "0,00";
-                MessageBox.Show("Некорректный ввод данных!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ РґР°РЅРЅС‹С…!", "РћС€РёР±РєР°!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -115,7 +115,7 @@ namespace Homework_Windows_Forms_Exercise_8
             catch (Exception)
             {
                 text.Text = "0,00";
-                MessageBox.Show("Некорректный ввод данных!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ РґР°РЅРЅС‹С…!", "РћС€РёР±РєР°!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -127,8 +127,8 @@ namespace Homework_Windows_Forms_Exercise_8
                 textBoxRadioSum.ReadOnly = true;
                 textBoxRadioSum.Text = "0,00";
                 toPayGasStation.Text = "0,00";
-                groupBoxFuel.Text = "К оплате";
-                label5.Text = "руб.";
+                groupBoxFuel.Text = "Рљ РѕРїР»Р°С‚Рµ";
+                label5.Text = "СЂСѓР±.";
                 textBoxRadioCount.Focus();
             }
             if (radioButtonSum.Checked)
@@ -137,8 +137,8 @@ namespace Homework_Windows_Forms_Exercise_8
                 textBoxRadioSum.ReadOnly = false;
                 textBoxRadioCount.Text = "0,00";
                 toPayGasStation.Text = "0,00";
-                groupBoxFuel.Text = "К выдаче";
-                label5.Text = "л.";
+                groupBoxFuel.Text = "Рљ РІС‹РґР°С‡Рµ";
+                label5.Text = "Р».";
                 textBoxRadioSum.Focus();
             }
         }
@@ -216,7 +216,7 @@ namespace Homework_Windows_Forms_Exercise_8
             catch (Exception)
             {
                 text.Text = "0,00";
-                MessageBox.Show("Некорректный ввод данных!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ РґР°РЅРЅС‹С…!", "РћС€РёР±РєР°!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -239,7 +239,7 @@ namespace Homework_Windows_Forms_Exercise_8
             catch (Exception)
             {
                 text.Text = "0,00";
-                MessageBox.Show("Некорректный ввод данных!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ РґР°РЅРЅС‹С…!", "РћС€РёР±РєР°!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -262,7 +262,7 @@ namespace Homework_Windows_Forms_Exercise_8
             catch (Exception)
             {
                 text.Text = "0,00";
-                MessageBox.Show("Некорректный ввод данных!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ РґР°РЅРЅС‹С…!", "РћС€РёР±РєР°!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -285,7 +285,7 @@ namespace Homework_Windows_Forms_Exercise_8
             catch (Exception)
             {
                 text.Text = "0,00";
-                MessageBox.Show("Некорректный ввод данных!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ РґР°РЅРЅС‹С…!", "РћС€РёР±РєР°!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -294,12 +294,12 @@ namespace Homework_Windows_Forms_Exercise_8
             tempTimer++;
             if (tempTimer == 10)
             {
-                DialogResult result = MessageBox.Show("Завершить работу с этим клиентом?", "Очистить форму?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Р—Р°РІРµСЂС€РёС‚СЊ СЂР°Р±РѕС‚Сѓ СЃ СЌС‚РёРј РєР»РёРµРЅС‚РѕРј?", "РћС‡РёСЃС‚РёС‚СЊ С„РѕСЂРјСѓ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     PayTotal += PayGasStation + PayCafe;
                     timer.Stop();
-                    Text = $"BestOil Общие продажи за {DateTime.Now.ToShortDateString()} = {Math.Round(PayTotal, 2)} грн.";
+                    Text = $"BestOil РћР±С‰РёРµ РїСЂРѕРґР°Р¶Рё Р·Р° {DateTime.Now.ToShortDateString()} = {Math.Round(PayTotal, 2)} РіСЂРЅ.";
                     CokoColaCheckBox.Checked = false;
                     HamburgerCheckBox.Checked = false;
                     HotDogCheckBox.Checked = false;
@@ -325,8 +325,8 @@ namespace Homework_Windows_Forms_Exercise_8
                 textBoxRadioSum.ReadOnly = true;
                 textBoxRadioSum.Text = "0,00";
                 toPayGasStation.Text = "0,00";
-                groupBoxFuel.Text = "К оплате";
-                label5.Text = "руб.";
+                groupBoxFuel.Text = "Рљ РѕРїР»Р°С‚Рµ";
+                label5.Text = "СЂСѓР±.";
                 textBoxRadioCount.Focus();
             }
             if (radioButtonSum.Checked)
@@ -335,8 +335,8 @@ namespace Homework_Windows_Forms_Exercise_8
                 textBoxRadioSum.ReadOnly = false;
                 textBoxRadioCount.Text = "0,00";
                 toPayGasStation.Text = "0,00";
-                groupBoxFuel.Text = "К выдаче";
-                label5.Text = "л.";
+                groupBoxFuel.Text = "Рљ РІС‹РґР°С‡Рµ";
+                label5.Text = "Р».";
                 textBoxRadioSum.Focus();
             }
         }
@@ -350,7 +350,7 @@ namespace Homework_Windows_Forms_Exercise_8
             }
             else
             {
-                MessageBox.Show("Вы не совершили ни каких операций", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Р’С‹ РЅРµ СЃРѕРІРµСЂС€РёР»Рё РЅРё РєР°РєРёС… РѕРїРµСЂР°С†РёР№", "Р’РЅРёРјР°РЅРёРµ!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
