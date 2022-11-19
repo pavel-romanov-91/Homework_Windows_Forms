@@ -67,7 +67,7 @@
             this.toPayTotal = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBoxFuel.SuspendLayout();
@@ -97,6 +97,7 @@
             this.toCount.TabIndex = 1;
             this.toCount.Text = "Рассчитать";
             this.toCount.UseVisualStyleBackColor = true;
+            this.toCount.Click += new System.EventHandler(this.toCount_Click);
             // 
             // HotDogCheckBox
             // 
@@ -109,6 +110,7 @@
             this.HotDogCheckBox.TabIndex = 2;
             this.HotDogCheckBox.Text = "Хот-дог";
             this.HotDogCheckBox.UseVisualStyleBackColor = true;
+            this.HotDogCheckBox.CheckedChanged += new System.EventHandler(this.HotDogCheckBox_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -187,7 +189,6 @@
             this.groupBox6.Size = new System.Drawing.Size(137, 98);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
             // radioButtonSum
             // 
@@ -200,6 +201,7 @@
             this.radioButtonSum.TabIndex = 1;
             this.radioButtonSum.Text = "Сумма";
             this.radioButtonSum.UseVisualStyleBackColor = true;
+            this.radioButtonSum.CheckedChanged += new System.EventHandler(this.radioButtonSum_CheckedChanged);
             // 
             // radioButtonCount
             // 
@@ -214,6 +216,7 @@
             this.radioButtonCount.TabStop = true;
             this.radioButtonCount.Text = "Количество";
             this.radioButtonCount.UseVisualStyleBackColor = true;
+            this.radioButtonCount.CheckedChanged += new System.EventHandler(this.radioButtonCount_CheckedChanged);
             // 
             // textBoxRadioCount
             // 
@@ -223,6 +226,7 @@
             this.textBoxRadioCount.Size = new System.Drawing.Size(91, 27);
             this.textBoxRadioCount.TabIndex = 14;
             this.textBoxRadioCount.Text = "0,00";
+            this.textBoxRadioCount.TextChanged += new System.EventHandler(this.textBoxRadioCount_TextChanged);
             // 
             // textBoxRadioSum
             // 
@@ -233,6 +237,7 @@
             this.textBoxRadioSum.Size = new System.Drawing.Size(91, 27);
             this.textBoxRadioSum.TabIndex = 13;
             this.textBoxRadioSum.Text = "0,00";
+            this.textBoxRadioSum.TextChanged += new System.EventHandler(this.textBoxRadioSum_TextChanged);
             // 
             // textBoxFuelPrice
             // 
@@ -258,6 +263,7 @@
             this.comboBoxFuel.Name = "comboBoxFuel";
             this.comboBoxFuel.Size = new System.Drawing.Size(160, 28);
             this.comboBoxFuel.TabIndex = 6;
+            this.comboBoxFuel.SelectedIndexChanged += new System.EventHandler(this.comboBoxFuel_SelectedIndexChanged);
             // 
             // groupBoxFuel
             // 
@@ -332,6 +338,7 @@
             this.CokoColaCount.Size = new System.Drawing.Size(63, 27);
             this.CokoColaCount.TabIndex = 23;
             this.CokoColaCount.Text = "0,00";
+            this.CokoColaCount.TextChanged += new System.EventHandler(this.CokoColaCount_TextChanged);
             // 
             // CokoColaPrice
             // 
@@ -352,6 +359,7 @@
             this.FrenchFriesCount.Size = new System.Drawing.Size(63, 27);
             this.FrenchFriesCount.TabIndex = 21;
             this.FrenchFriesCount.Text = "0,00";
+            this.FrenchFriesCount.TextChanged += new System.EventHandler(this.FrenchFriesCount_TextChanged);
             // 
             // FrenchFriesPrice
             // 
@@ -372,6 +380,7 @@
             this.HamburgerCount.Size = new System.Drawing.Size(63, 27);
             this.HamburgerCount.TabIndex = 19;
             this.HamburgerCount.Text = "0,00";
+            this.HamburgerCount.TextChanged += new System.EventHandler(this.HamburgerCount_TextChanged);
             // 
             // HamburgerPrice
             // 
@@ -392,6 +401,7 @@
             this.HotDogCount.Size = new System.Drawing.Size(63, 27);
             this.HotDogCount.TabIndex = 17;
             this.HotDogCount.Text = "0,00";
+            this.HotDogCount.TextChanged += new System.EventHandler(this.HotDogCount_TextChanged);
             // 
             // HotDogPrice
             // 
@@ -414,6 +424,7 @@
             this.CokoColaCheckBox.TabIndex = 10;
             this.CokoColaCheckBox.Text = "Coka-Cola";
             this.CokoColaCheckBox.UseVisualStyleBackColor = true;
+            this.CokoColaCheckBox.CheckedChanged += new System.EventHandler(this.CokoColaCheckBox_CheckedChanged);
             // 
             // FrenchFriesCheckBox
             // 
@@ -426,6 +437,7 @@
             this.FrenchFriesCheckBox.TabIndex = 9;
             this.FrenchFriesCheckBox.Text = "Картошка фри";
             this.FrenchFriesCheckBox.UseVisualStyleBackColor = true;
+            this.FrenchFriesCheckBox.CheckedChanged += new System.EventHandler(this.FrenchFriesCheckBox_CheckedChanged);
             // 
             // HamburgerCheckBox
             // 
@@ -438,6 +450,7 @@
             this.HamburgerCheckBox.TabIndex = 8;
             this.HamburgerCheckBox.Text = "Гамбургер";
             this.HamburgerCheckBox.UseVisualStyleBackColor = true;
+            this.HamburgerCheckBox.CheckedChanged += new System.EventHandler(this.HamburgerCheckBox_CheckedChanged);
             // 
             // label2
             // 
@@ -535,15 +548,16 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "руб.";
             // 
-            // Timer
+            // timer
             // 
-            this.Timer.Interval = 1000;
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 612);
+            this.ClientSize = new System.Drawing.Size(659, 615);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -551,7 +565,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BestOil";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -608,6 +621,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Timer timer;
     }
 }

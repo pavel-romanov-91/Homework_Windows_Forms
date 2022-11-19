@@ -5,19 +5,19 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_1", "Homework_Windows_Forms\Homework_Windows_Forms_Exercise_1.csproj", "{FC19C0AA-4D08-4876-8394-21602F43B710}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_2", "Homework_Windows_Forms_Meeting_2\Homework_Windows_Forms_Exercise_2.csproj", "{9FDB0DBE-9AFB-4E54-A97B-629EEF94B305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_2", "Homework_Windows_Forms_Meeting_2\Homework_Windows_Forms_Exercise_2.csproj", "{9FDB0DBE-9AFB-4E54-A97B-629EEF94B305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_3", "Homework_Windows_Forms_Meeting_3\Homework_Windows_Forms_Exercise_3.csproj", "{3F91C4B4-FEAD-493F-B603-B9C1DE9D245C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_3", "Homework_Windows_Forms_Meeting_3\Homework_Windows_Forms_Exercise_3.csproj", "{3F91C4B4-FEAD-493F-B603-B9C1DE9D245C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_4", "Homework_Windows_Forms_Exercise_4\Homework_Windows_Forms_Exercise_4.csproj", "{FF49797D-9D9B-4B80-9426-E948D36B7528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_4", "Homework_Windows_Forms_Exercise_4\Homework_Windows_Forms_Exercise_4.csproj", "{FF49797D-9D9B-4B80-9426-E948D36B7528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_5", "Homework_Windows_Forms_Exercise_5\Homework_Windows_Forms_Exercise_5.csproj", "{3DDC2C78-9503-4BC0-BEC9-9CA8C56DA05F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_5", "Homework_Windows_Forms_Exercise_5\Homework_Windows_Forms_Exercise_5.csproj", "{3DDC2C78-9503-4BC0-BEC9-9CA8C56DA05F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_6", "Homework_Windows_Forms_Exercise_6\Homework_Windows_Forms_Exercise_6.csproj", "{BDB6A3AA-7A01-4F24-AFCC-CCE50D6C13E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_6", "Homework_Windows_Forms_Exercise_6\Homework_Windows_Forms_Exercise_6.csproj", "{BDB6A3AA-7A01-4F24-AFCC-CCE50D6C13E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_7", "Homework_Windows_Forms_Exercise_7\Homework_Windows_Forms_Exercise_7.csproj", "{1B36D278-E171-4D23-8B9E-0851C02062B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_Windows_Forms_Exercise_7", "Homework_Windows_Forms_Exercise_7\Homework_Windows_Forms_Exercise_7.csproj", "{1B36D278-E171-4D23-8B9E-0851C02062B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_8", "Homework_Windows_Forms_Exercise_8\Homework_Windows_Forms_Exercise_8.csproj", "{4C43EB44-1C46-4DBE-975F-18926DBB7F68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Windows_Forms_Exercise_8", "Homework_Windows_Forms_Exercise_8\Homework_Windows_Forms_Exercise_8.csproj", "{0FC24E0A-7339-48D6-9384-D26DD3DAE7D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,10 @@ Global
 		{1B36D278-E171-4D23-8B9E-0851C02062B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B36D278-E171-4D23-8B9E-0851C02062B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B36D278-E171-4D23-8B9E-0851C02062B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C43EB44-1C46-4DBE-975F-18926DBB7F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C43EB44-1C46-4DBE-975F-18926DBB7F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C43EB44-1C46-4DBE-975F-18926DBB7F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C43EB44-1C46-4DBE-975F-18926DBB7F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC24E0A-7339-48D6-9384-D26DD3DAE7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC24E0A-7339-48D6-9384-D26DD3DAE7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC24E0A-7339-48D6-9384-D26DD3DAE7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC24E0A-7339-48D6-9384-D26DD3DAE7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
